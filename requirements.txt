@@ -9,8 +9,8 @@ charset-normalizer==2.0.12
 colorama==0.4.4
 distlib==0.3.4
 Django==4.0
+django-bootstrap4==22.1
 django-debug-toolbar==3.4.0
-django-filter==22.1
 filelock==3.7.1
 idna==3.3
 more-itertools==8.13.0

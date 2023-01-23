@@ -32,8 +32,6 @@ urlpatterns = [
     path("", include("posts.urls")),
 ]
 
-
-
 if settings.DEBUG:
     import debug_toolbar
     urlpatterns = [path("__debug__/",
