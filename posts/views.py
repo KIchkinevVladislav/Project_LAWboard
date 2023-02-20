@@ -136,6 +136,7 @@ def post(request, username, post_id):
 
     return render(request, 'post.html', context)
 
+
 @login_required
 def post_edit(request, username, post_id):
     """
