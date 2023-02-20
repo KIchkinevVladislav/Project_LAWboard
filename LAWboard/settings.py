@@ -25,13 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rw6jogvee!)c7c4v#!d@u8@_trc2ld#y^0%uv0z0fk31ok%=e3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-        "localhost",
-        "127.0.0.1",
-        "[::1]",
-        "testserver",
+        "*",
         ]
 
 
@@ -48,9 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # debug toolbar
     'debug_toolbar',
     'sorl.thumbnail',
-
 ]
 
 MIDDLEWARE = [
@@ -61,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # debug toolbar
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
@@ -131,7 +129,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
@@ -164,3 +162,4 @@ CACHES = {
     }
 }
 
+#CSRF_TRUSTED_ORIGINS=["https://bea5-178-71-105-162.eu.ngrok.io"]
