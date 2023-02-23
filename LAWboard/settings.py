@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rw6jogvee!)c7c4v#!d@u8@_trc2ld#y^0%uv0z0fk31ok%=e3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
         "*",
@@ -162,4 +162,4 @@ CACHES = {
     }
 }
 
-#CSRF_TRUSTED_ORIGINS=["https://bea5-178-71-105-162.eu.ngrok.io"]
+#CSRF_TRUSTED_ORIGINS=["https://bea5-178-71-105-162.eu.ngrok.io"] # для работы CSRF необходимо указывать разрешенный доступ
